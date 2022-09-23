@@ -113,9 +113,9 @@ To ensure these resources are available, complete the following steps.
 
 The resources have now been created.
 
-#### Task 2 - Verify tools
+#### Task 2 - Verify lab tool versions
 
-1. In your virtual machine environment, open a Windows Command Prompt window.
+1. In your lab environment, open a Windows Command Prompt window.
 
 1. To display the version of Azure CLI that is installed locally, enter the following command:
 
