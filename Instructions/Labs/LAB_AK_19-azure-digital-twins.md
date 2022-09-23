@@ -89,7 +89,7 @@ To ensure these resources are available, complete the following steps.
 1. To determine the current user ID, open the **Cloud Shell** and execute the following command:
 
     ```sh
-    az ad signed-in-user show --query Id -o tsv
+    az ad signed-in-user show --query id -o tsv
     ```
 
     Copy the displayed object ID.
