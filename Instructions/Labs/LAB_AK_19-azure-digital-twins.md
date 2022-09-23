@@ -86,10 +86,10 @@ To ensure these resources are available, complete the following steps.
 
 1. In the **Course ID** field, enter **az220**.
 
-1. To determine the current user object ID, open the **Cloud Shell** and execute the following command:
+1. To determine the current user ID, open the **Cloud Shell** and execute the following command:
 
     ```sh
-    az ad signed-in-user show --query objectId -o tsv
+    az ad signed-in-user show --query Id -o tsv
     ```
 
     Copy the displayed object ID.
