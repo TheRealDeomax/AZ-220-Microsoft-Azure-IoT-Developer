@@ -584,7 +584,7 @@ In earlier versions of this lab, the FQDN would be used as the value from the **
 
 The local machine can now resolve the VM name to the appropriate IP Address.
 
-#### Task 1: Configure device app
+#### Task 2: Configure device app
 
 In this task, you will configure the downstream IoT device (child or leaf device) to connect to IoT Hub using Symmetric Keys. The devices will be configured to connect to IoT Hub and the parent IoT Edge Device using a Connection String that contains the Symmetric Key (in addition to the Gateway Hostname for the Parent IoT Edge Device).
 
@@ -672,7 +672,7 @@ In this task, you will configure the downstream IoT device (child or leaf device
 
 1. Leave the simulated device running while you move on to the next Exercise.
 
-#### Task 2: Test Device Connectivity and Offline Support
+#### Task 3: Test Device Connectivity and Offline Support
 
 In this task, you will monitor events from the **sensor-th-0084** that are being sent to Azure IoT Hub through the **vm-az220-training-gw0002-{your-id}** IoT Edge Transparent Gateway. You will then interrupt connectivity between the **vm-az220-training-gw0002-{your-id}** and Azure IoT Hub to see that telemetry is still sent from the child IoT Device to the IoT Edge Gateway. After this, you will resume connectivity with Azure IoT Hub and monitor that the IoT Edge Gateway resumes sending telemetry to Azure IoT Hub.
 
@@ -722,7 +722,7 @@ In this task, you will monitor events from the **sensor-th-0084** that are being
 
     > **Note**: Next, you will need to test the **Offline** capabilities. To do this, you need to make the **vm-az220-training-gw0002-{your-id}** device go offline. Since this is a Virtual Machine running in Azure, this can be simulated by adding an **Outbound rule** to the **Network security group** for the VM.
 
-#### Task3: Add rule to block traffic
+#### Task 4: Add rule to block traffic
 
 1. Within the **Azure portal**, navigate to your Dashboard, and then locate the **rg-az220vm** resource group tile.
 
