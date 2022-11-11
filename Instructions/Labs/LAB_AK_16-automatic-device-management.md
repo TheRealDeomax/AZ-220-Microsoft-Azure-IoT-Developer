@@ -227,9 +227,9 @@ In this exercise, you will use the Azure portal to create a new device managemen
 
     Your IoT Hub blade should now be displayed.
 
-1. On the left side navigation menu, under **Device management**, click **Configurations**.
+1. On the left side navigation menu, under **Device management**, click **Configurations + Deployments**.
 
-1. On the **IoT device configuration** pane, click **+ Add Device Configuration**.
+1. On the **IoT device configuration** pane, click **+ Add**, from dropdown list, click **Device Twin Configuration**.
 
 1. On the **Create Device Twin Configuration** blade, under **Name**, enter **firmwareupdate**
 
@@ -249,6 +249,19 @@ In this exercise, you will use the Azure portal to create a new device managemen
     }
     ```
 
+1. At the bottom of the blade, click **Next: Target devices >**.
+
+1. On the **Target Devices** tab, under **Priority**, in the **Priority (higher values ...)** field, enter **10**.
+
+1. Under **Target Condition**, in the **Target Condition** field, enter the following query:
+
+    ``` SQL
+    deviceId='<your device id>'
+    ```
+
+    > **Note**: Be sure to replace `'<your device id>'` with the Device ID that you used to create the device. For example: `'sensor-th-0155'`
+
+
 1. At the bottom of the blade, click **Next: Metrics >**.
 
     You will be using a custom metric to track whether the firmware update was effective.
@@ -261,18 +274,6 @@ In this exercise, you will use the Azure portal to create a new device managemen
     SELECT deviceId FROM devices
         WHERE properties.reported.firmware.currentFwVersion='1.0.1'
     ```
-
-1. At the bottom of the blade, click **Next: Target devices >**.
-
-1. On the **Target Devices** tab, under **Priority**, in the **Priority (higher values ...)** field, enter **10**.
-
-1. Under **Target Condition**, in the **Target Condition** field, enter the following query:
-
-    ``` SQL
-    deviceId='<your device id>'
-    ```
-
-    > **Note**: Be sure to replace `'<your device id>'` with the Device ID that you used to create the device. For example: `'sensor-th-0155'`
 
 1. At the bottom of the blade, click **Next: Review + Create >**
 
