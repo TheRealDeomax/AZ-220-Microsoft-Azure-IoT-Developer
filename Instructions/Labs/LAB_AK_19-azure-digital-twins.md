@@ -1891,4 +1891,4 @@ Now, data should be flowing into your Time Series Insights instance, ready to be
 
 By default, digital twins are stored as a flat hierarchy in Time Series Insights, however they can be enriched with model information and a multi-level hierarchy for organization. You can write custom logic to automatically provide this information using the model and graph data already stored in Azure Digital Twins.
 
-Congratulations - you are now passing device telemtry data to Time Series Insights.
+Congratulations - you are now passing device telemetry data to Time Series Insights.
