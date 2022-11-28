@@ -259,7 +259,7 @@ In this task, you will begin work on the back-end app that will be used to recei
 
     The CheeseCaveOperator application that has been prepared for you is a simple console application that includes a couple of NuGet package libraries and some comments that will be used guide you through the process of building your code. You will need to add code blocks to the project before you are able to run the application.
 
-#### Task 3: Enable the telemetry receiver code
+#### Task 2: Enable the telemetry receiver code
 
 1. In the **EXPLORER** pane, click **Program.cs**.
 
