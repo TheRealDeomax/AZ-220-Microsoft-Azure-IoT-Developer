@@ -89,7 +89,7 @@ To ensure these resources are available, complete the following steps.
 1. To determine the current user ID, open the **Cloud Shell** and execute the following command:
 
     ```sh
-    az ad signed-in-user show --query Id -o tsv
+    az ad signed-in-user show --query id -o tsv
     ```
 
     Copy the displayed object ID.
@@ -113,9 +113,9 @@ To ensure these resources are available, complete the following steps.
 
 The resources have now been created.
 
-#### Task 2 - Verify tools
+#### Task 2 - Verify lab tool versions
 
-1. In your virtual machine environment, open a Windows Command Prompt window.
+1. In your lab environment, open a Windows Command Prompt window.
 
 1. To display the version of Azure CLI that is installed locally, enter the following command:
 
