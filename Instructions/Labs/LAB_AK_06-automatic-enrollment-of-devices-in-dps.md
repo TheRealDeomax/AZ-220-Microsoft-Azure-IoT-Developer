@@ -41,7 +41,7 @@ This lab assumes that the following Azure resources are available:
 To ensure these resources are available, complete the following steps.
 
 1. In the virtual machine environment, open a Microsoft Edge browser window, and then navigate to the following Web address:
- 
+
     +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab06.json+++
 
     > **NOTE**: Whenever you see the green "T" symbol, for example +++enter this text+++, you can click the associated text and the information will be typed into the current field within the virtual machine environment.
@@ -203,7 +203,9 @@ In this exercise, you will generate an X.509 CA Certificate using OpenSSL within
 
     > **IMPORTANT**: You will need to leave the **Certificate Details** pane open while you generate the verification certificate. If you close the pane, you will invalidate the verification code, and will need to generate a new one.
 
-1. Open the **Azure Cloud Shell**, if it's not still open from earlier, and navigate to the `cd ~/certificates` directory.
+1. Open the **Azure Cloud Shell**, if it's not still open from earlier, and navigate to the `~/certificates` directory.
+
+    You can use the `cd` command to change directories.
 
 1. To create the verification certificate, enter the following command:
 
@@ -871,7 +873,6 @@ In this task, you will use the **sensor-thl-2001** device for the individual enr
 In this exercise, you will deprovision the full enrollment group. Again, this includes disenrolling from Device Provisioning Service and deregistering the devices from IoT Hub.
 
 #### Task 1: Disenroll the enrollment group from the DPS
-
 
 In this task, you will delete your Enrollment Group, which will remove the enrolled devices.
 

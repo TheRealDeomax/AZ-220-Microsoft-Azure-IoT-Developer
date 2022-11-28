@@ -41,7 +41,7 @@ This lab assumes the following Azure resources are available:
 To ensure these resources are available, complete the following steps.
 
 1. In the virtual machine environment, open a Microsoft Edge browser window, and then navigate to the following Web address:
- 
+
     +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab09.json+++
 
     > **NOTE**: Whenever you see the green "T" symbol, for example +++enter this text+++, you can click the associated text and the information will be typed into the current field within the virtual machine environment.
@@ -80,23 +80,25 @@ To ensure these resources are available, complete the following steps.
 
     * connectionString
 
-The resources have now been created.
+    The resources have now been created.
 
->**Note**: You may need to register the **microsoft.eventgrid** resource provider for this lab to be successful. Run the following command to check:
+    > **Note**: You may need to register the **microsoft.eventgrid** resource provider for this lab to be successful. Run the following command to check:
 
-```bash
-az provider show --namespace microsoft.eventgrid -o tsv
-```
-> If the results shows **Registered** nothing more is required. If **NotRegistered**, run the following command to register the **microsoft.eventgrid** provider:
+    ```bash
+    az provider show --namespace microsoft.eventgrid -o tsv
+    ```
 
-```bash
-az provider register --namespace microsoft.eventgrid
-```
-> This may take 15 minutes or longer to complete. You should see the following message:
+    If the results shows **Registered** nothing more is required. If **NotRegistered**, run the following command to register the **microsoft.eventgrid** provider:
 
-```bash
-Registering is still on-going. You can monitor using 'az provider show -n microsoft.eventgrid'
-```
+    ```bash
+    az provider register --namespace microsoft.eventgrid
+    ```
+
+    This may take 15 minutes or longer to complete. You should see the following message:
+
+    ```bash
+    Registering is still on-going. You can monitor using 'az provider show -n microsoft.eventgrid'
+    ```
 
 ### Exercise 2: Create HTTP Web Hook Logic App that sends an email
 
@@ -132,13 +134,13 @@ In this exercise, you will create a new Azure Logic App that will be triggered v
 
 1. In the **Region** dropdown, select the same Azure region that was used for the resource group.
 
-2. Click **Review + create**.
+1. Click **Review + create**.
 
-3. On the **Review + create** tab, click **Create**.
+1. On the **Review + create** tab, click **Create**.
 
     > **Note**:  It will take a minute or two for the Logic App deployment to complete.
 
-4. Navigate back to your Azure portal Dashboard.
+1. Navigate back to your Azure portal Dashboard.
 
 #### Task 2: Configure Your Logic App
 
