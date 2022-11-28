@@ -132,15 +132,13 @@ In this exercise, you will create a new Azure Logic App that will be triggered v
 
 1. In the **Region** dropdown, select the same Azure region that was used for the resource group.
 
-1. Leave **Enable Log Analytics** set to **No**.
+2. Click **Review + create**.
 
-1. Click **Review + create**.
-
-1. On the **Review + create** tab, click **Create**.
+3. On the **Review + create** tab, click **Create**.
 
     > **Note**:  It will take a minute or two for the Logic App deployment to complete.
 
-1. Navigate back to your Azure portal Dashboard.
+4. Navigate back to your Azure portal Dashboard.
 
 #### Task 2: Configure Your Logic App
 
