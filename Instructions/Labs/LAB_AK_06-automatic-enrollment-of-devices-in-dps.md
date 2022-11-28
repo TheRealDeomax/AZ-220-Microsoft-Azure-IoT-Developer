@@ -203,7 +203,7 @@ In this exercise, you will generate an X.509 CA Certificate using OpenSSL within
 
     > **IMPORTANT**: You will need to leave the **Certificate Details** pane open while you generate the verification certificate. If you close the pane, you will invalidate the verification code, and will need to generate a new one.
 
-1. Open the **Azure Cloud Shell**, if it's not still open from earlier, and navigate to the `~/certificates` directory.
+1. Open the **Azure Cloud Shell**, if it's not still open from earlier, and navigate to the `cd ~/certificates` directory.
 
 1. To create the verification certificate, enter the following command:
 
